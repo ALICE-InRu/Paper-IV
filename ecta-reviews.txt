@@ -1,0 +1,29 @@
+======================================
+
+Review #1 
+
+Although the paper is well written its needs a revision because there are some small mistakes that need to be corrected. For example: 1) in the last sentence of the abstract there is a word missing after within. "... instances which can vary within, then normalising ..." 2) in the introduction it is written "... combinations relies ..." it is either combination relies or combinations rely 3) i.e. must be always between commas , i.e., 4) the last paragraph of Section 4, needs revision. 5) always capitalize tables/section/figures when using them with numbers, i.e., Table 2 (not table 2) Figure 4 (a and b) are too small and need to be enlarged.
+
+======================================
+
+Review #2
+
+Good paper with important insights. Good writing, presentation, etc. Thanks for such a valuable submission.
+
+======================================
+
+Review #3
+
+The paper needs major revisions concerning the presentation and the technical content. With respect with the former all the figures must be improved, the sections 1 and 2 should be merged and shorten following a standard model (i.e., the problem, why is relevant, previous solutions, what you propose, the organization of the paper.), and a background section must be included to make the paper conceptually self-contained (e.g., what is ordinal regression, the meaning of equation (1) - the kernel function phi,…). The latter point includes the clarification of the design of experiments (e.g., explaining what you mean when you say “statistical significance”).
+
+======================================
+
+Review #4
+
+Fig.4 has very small detail and may be hard to see (it's also in colour).
+
+This is a nice paper.  It explores different jobshop instances and shows the variability of different techniques and aspects of applying algorithms to problems.  The presentation is very good.
+
+Fig. 3 might better with a log scale on the y axis.  It looks like very little progress is made after the first few hundered generations, but there might be small progress - the log scale would show it.
+
+======================================

@@ -1,0 +1,77 @@
+ 41.51 & 41 & 16 &  3 & 107   %PREF j.rnd 6x5 train
+ 40.23 & 39 & 17 &  1 & 115   %PREF j.rnd 6x5 test
+ 1255.56 & 1246 & 123 & 939 & 1666   %PREF j.rnd 10x10 test
+ 41.41 & 40 & 16 &  2 & 87   %PREF j.rndn 6x5 train
+ 41.89 & 42 & 16 &  1 & 98   %PREF j.rndn 6x5 test
+ 1166.42 & 1160 & 89 & 912 & 1521   %PREF j.rndn 10x10 test
+ 20.88 & 20 & 11 &  0 & 68   %PREF f.rnd 6x5 train
+ 20.94 & 20 & 11 &  0 & 55   %PREF f.rnd 6x5 test
+ 1288.92 & 1287 & 85 & 1030 & 1545   %PREF f.rnd 10x10 test
+ 2.30 &  2 &  1 &  0 &  7   %PREF f.rndn 6x5 train
+ 2.30 &  2 &  1 &  0 &  6   %PREF f.rndn 6x5 test
+ 987.40 & 987 &  9 & 959 & 1016   %PREF f.rndn 10x10 test
+ 1.18 &  1 &  1 &  0 &  5   %PREF f.jc 6x5 train
+ 1.19 &  1 &  1 &  0 &  7   %PREF f.jc 6x5 test
+ 1137.82 & 1138 & 287 & 582 & 1694   %PREF f.jc 10x10 test
+
+ 0.33 &  0 &  0 &  0 &  2   %CMA-ES min_Cmax fjc 6x5 train
+ 7.44 &  7 &  5 &  0 & 23   %CMA-ES min_Cmax frnd 6x5 train
+ 8.09 &  8 &  2 &  0 & 11   %CMA-ES min_Cmax frndn 6x5 train
+ 8.54 & 10 &  6 &  0 & 26   %CMA-ES min_Cmax jrnd 6x5 train
+ 8.68 & 11 &  6 &  0 & 31   %CMA-ES min_Cmax jrndn 6x5 train
+ 0.36 &  0 &  0 &  0 &  2   %CMA-ES min_rho fjc 6x5 train
+ 7.48 &  7 &  5 &  0 & 34   %CMA-ES min_rho frnd 6x5 train
+ 0.94 &  1 &  1 &  0 &  4   %CMA-ES min_rho frndn 6x5 train
+ 8.26 & 10 &  6 &  0 & 26   %CMA-ES min_rho jrnd 6x5 train
+ 8.69 & 11 &  6 &  0 & 31   %CMA-ES min_rho jrndn 6x5 train
+ 1135.44 & 1134 & 286 & 582 & 1681   %CMA-ES min_Cmax fjc 10x10 test
+ 1178.73 & 1176 & 80 & 976 & 1416   %CMA-ES min_Cmax frnd 10x10 test
+ 1065.48 & 1059 & 32 & 992 & 1222   %CMA-ES min_Cmax frndn 10x10 test
+ 922.51 & 914 & 73 & 741 & 1173   %CMA-ES min_Cmax jrnd 10x10 test
+ 855.85 & 857 & 50 & 719 & 1010   %CMA-ES min_Cmax jrndn 10x10 test
+ 1135.47 & 1134 & 286 & 582 & 1681   %CMA-ES min_rho fjc 10x10 test
+ 1181.91 & 1179 & 80 & 984 & 1404   %CMA-ES min_rho frnd 10x10 test
+ 980.11 & 980 &  8 & 957 & 1006   %CMA-ES min_rho frndn 10x10 test
+ 931.37 & 931 & 71 & 735 & 1167   %CMA-ES min_rho jrnd 10x10 test
+ 855.91 & 856 & 51 & 719 & 1020   %CMA-ES min_rho jrndn 10x10 test
+
+ 16.48 & 16 &  9 &  0 & 45   %MWR j.rnd 6x5 train
+ 50.37 & 49 & 18 &  9 & 113   %LWR j.rnd 6x5 train
+ 30.20 & 28 & 14 &  2 & 73   %LPT j.rnd 6x5 train
+ 39.90 & 38 & 16 &  0 & 98   %SPT j.rnd 6x5 train
+ 997.01 & 992 & 81 & 800 & 1273   %MWR j.rnd 10x10 test
+ 1339.85 & 1336 & 128 & 1067 & 1788   %LWR j.rnd 10x10 test
+ 1165.54 & 1158 & 107 & 892 & 1552   %LPT j.rnd 10x10 test
+ 1233.20 & 1226 & 127 & 936 & 1697   %SPT j.rnd 10x10 test
+ 14.02 & 13 &  8 &  0 & 37   %MWR j.rndn 6x5 train
+ 46.64 & 47 & 16 &  7 & 94   %LWR j.rndn 6x5 train
+ 31.78 & 30 & 14 &  0 & 70   %LPT j.rndn 6x5 train
+ 37.29 & 36 & 14 &  3 & 82   %SPT j.rndn 6x5 train
+ 897.39 & 898 & 56 & 765 & 1088   %MWR j.rndn 10x10 test
+ 1199.18 & 1193 & 91 & 981 & 1560   %LWR j.rndn 10x10 test
+ 1097.59 & 1101 & 82 & 909 & 1370   %LPT j.rndn 10x10 test
+ 1114.86 & 1105 & 83 & 858 & 1411   %SPT j.rndn 10x10 test
+ 28.77 & 28 & 12 &  1 & 72   %MWR f.rnd 6x5 train
+ 20.05 & 19 & 10 &  0 & 71   %LWR f.rnd 6x5 train
+ 33.95 & 33 & 12 &  4 & 84   %LPT f.rnd 6x5 train
+ 26.89 & 27 & 12 &  1 & 70   %SPT f.rnd 6x5 train
+ 1401.22 & 1399 & 103 & 1126 & 1714   %MWR f.rnd 10x10 test
+ 1284.41 & 1286 & 85 & 1042 & 1495   %LWR f.rnd 10x10 test
+ 1435.81 & 1438 & 80 & 1211 & 1725   %LPT f.rnd 10x10 test
+ 1383.74 & 1382 & 104 & 1085 & 1686   %SPT f.rnd 10x10 test
+ 23.36 & 21 &  8 &  0 & 48   %MWR f.rndn 6x5 train
+ 2.25 &  2 &  1 &  0 &  7   %LWR f.rndn 6x5 train
+ 11.03 & 12 &  5 &  0 & 24   %LPT f.rndn 6x5 train
+ 21.52 & 20 &  9 &  0 & 50   %SPT f.rndn 6x5 train
+ 1248.46 & 1245 & 59 & 1106 & 1472   %MWR f.rndn 10x10 test
+ 986.94 & 987 &  9 & 959 & 1010   %LWR f.rndn 10x10 test
+ 1104.20 & 1099 & 39 & 1021 & 1230   %LPT f.rndn 10x10 test
+ 1191.00 & 1189 & 56 & 1024 & 1367   %SPT f.rndn 10x10 test
+ 4.14 &  2 &  5 &  0 & 33   %MWR f.jc 6x5 train
+ 1.13 &  1 &  1 &  0 &  6   %LWR f.jc 6x5 train
+ 2.88 &  2 &  3 &  0 & 20   %LPT f.jc 6x5 train
+ 4.72 &  2 &  6 &  0 & 27   %SPT f.jc 6x5 train
+ 1194.08 & 1191 & 312 & 611 & 1950   %MWR f.jc 10x10 test
+ 1136.49 & 1141 & 287 & 581 & 1690   %LWR f.jc 10x10 test
+ 1158.33 & 1159 & 297 & 582 & 1863   %LPT f.jc 10x10 test
+ 1191.00 & 1190 & 311 & 590 & 1846   %SPT f.jc 10x10 test
