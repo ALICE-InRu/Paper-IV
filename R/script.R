@@ -46,3 +46,10 @@ for(o in unique(dat$obj)){
   p = p + theme(legend.position="bottom")    
   ggsave(p,file=paste('../fig/CMAweightsEvo',o,'eps',sep='.'),height=7,width=10,unit='in')
 }
+
+levels(dat$feature)=paste('phi',c('proc','startTime','endTime','macFree','makespan','wrmJob','wrmMWR','slots','slotsTotal','slotsTotalPerOp','wait','slotCreated','totProc'),sep='.')
+mdat=dcast(dat,trainingdata+obj+generation~feature,value.var = 'weight')
+mdat=ddply(mdat,~trainingdata+obj,'mutate',maxGen=max(generation))
+mdat=subset(mdat,generation==maxGen)
+mdat$maxGen=NULL;
+write.csv(mdat,'weightFinal.csv',row.names=F,quote=F)
