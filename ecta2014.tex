@@ -267,7 +267,7 @@ Main statistics of the experimental run are given in~\cref{cma:funeval} and depi
 
 In order to compare the two objective functions, the best weights reported were used for~\cref{eq:jssp:linweights} on the corresponding training data. Its box-plot of percentage relative deviation from optimality, defined by~\cref{eq:ratio}, is depicted in~\cref{fig:cma:trainboxpl} and \cref{tbl:results:train} present its main statistics; mean, median, standard deviation, minimum and maximum values.
 
-In the case of $\mathcal{P}_{f.rndn}$,~\cref{eq:cma:rho}  gave a considerably worse results, since the optimisation got trapped in a local minima, as the erratic evolution of the weights in~\cref{fig:cma:wei:cmax} suggest.
+In the case of $\mathcal{P}_{f.rndn}$,~\cref{eq:cma:makespan}  gave a considerably worse results, since the optimisation got trapped in a local minima, as the erratic evolution of the weights in~\cref{fig:cma:wei:cmax} suggest.
 For other problem spaces,~\cref{eq:cma:makespan} gave slightly better results than~\cref{eq:cma:rho}. However, there was no statistical difference between adopting either objective function. Therefore, minimisation of expectation of $\rho$, is preferred over simply using the unscaled resulting makespan. 
 
 \begin{figure}

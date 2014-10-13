@@ -22,12 +22,15 @@ p
 ggsave(p,filename='../fig/CMAfitnessLogEvo.eps',height=8,width=4,unit='in')
 
 dat <- read.csv('ratioTest.csv')
-levels(dat$trainingdata)=c('j.rnd','j.rndn','f.rnd','f.rndn','f.jc')
+dat$trainingdata=factor(dat$trainingdata,levels=c('j.rnd','j.rndn','f.rnd','f.rndn','f.jc'))
 levels(dat$obj)=c('ES_Cmax','ES_rho')
+stat=ddply(dat,~trainingdata+obj,summarise,mu.rho=round(mean(rho),digit=3),mu.Cmax=round(mean(C_max),digit=3))
+
 
 dat <- read.csv('ratioTrain.csv')
 dat$trainingdata=factor(dat$trainingdata,levels=c('j.rnd','j.rndn','f.rnd','f.rndn','f.jc'))
 levels(dat$obj)=c('ES_Cmax','ES_rho')
+stat=ddply(dat,~trainingdata+obj,summarise,mu.rho=round(mean(rho),digit=3),mu.Cmax=round(mean(C_max),digit=3))
 p=ggplot(dat, aes(x=trainingdata, y=rho, fill=obj))+geom_boxplot()
 p=p+xlab('')+ylab('Percentage relative deviation from optimality, rho (%)')+theme_bw()+  scale_fill_grey('Objective function')
 p = p +theme(legend.position="bottom")  
