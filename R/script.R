@@ -5,13 +5,13 @@ dat$trainingdata=factor(dat$trainingdata,levels=c('j.rnd','j.rndn','f.rnd','f.rn
 levels(dat$obj)=c('ES_Cmax','ES_rho')
 dat$shop=substr(dat$trainingdata,1,1)
 
-p=ggplot(dat,aes(y=fitness,x=generation,linetype=trainingdata))+geom_line()+facet_wrap(~obj,ncol=1,scales='free')+
+p=ggplot(dat,aes(y=fitness,x=generation,linetype=trainingdata))+geom_line()+facet_wrap(~obj,ncol=2,scales='free')+
   ylab('Fitness value')+
   xlab('Generation')
 p=p+scale_linetype_discrete('Problem\nspace')+theme_bw()
 p = p + theme(legend.position="bottom")    
 p
-ggsave(p,filename='../fig/CMAfitnessEvo.eps',height=8,width=4,unit='in')
+ggsave(p,filename='../fig/CMAfitnessEvo.eps',height=4,width=8,unit='in')
 
 p=ggplot(dat,aes(y=log(fitness),x=generation,linetype=trainingdata))+geom_line()+facet_wrap(~obj,ncol=1,scales='free')+
   ylab('Log of the fitness value')+
