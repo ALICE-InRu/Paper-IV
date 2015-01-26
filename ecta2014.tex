@@ -66,7 +66,7 @@
 
 \begin{document}
 
-\title*{Evolutionary learning of weighted linear composite dispatching rules 
+\title*{Evolutionary learning of linear composite dispatching rules 
 for scheduling}
 % Use \titlerunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
@@ -702,7 +702,7 @@ From the results based on $6\times5$ training data given  in
 \cref{tbl:results:train}, it's obvious that CMA-ES optimisation substantially 
 outperforms the previous PREF methods from \cite{InRu11a} for all problem 
 spaces considered. Furthermore, the results hold when testing on $10\times10$ 
-(cf. \cref{tbl:results:test}), suggesting the method is indeed  scalable for 
+(cf. \cref{tbl:results:test}), suggesting the method is indeed scalable to 
 higher dimensions. 
 
 Moreover, the study showed that the choice of objective function  for 
@@ -713,25 +713,8 @@ $\mathcal{P}_{f.rndn}$. Implying, even though ES doesn't rely on optimal
 solutions, there are some problem spaces where it can be of great benefit. This 
 is due to the fact that the problem instances can vary greatly within the same 
 problem space \cite{InRu12}. Thus normalising the objective function would help 
-the evolutionary search to deviate the from giving too much weight for 
-problematic problem instances for the greater good.
-
-%The weights for \cref{eq:jssp:linweights} in \cite{InRu11a} were found using 
-%supervised learning, where the training data was created from optimal 
-%solutions of randomly generated problem instances. As an alternative, this 
-%study showed that minimising the mean makespan directly using a brute force 
-%search via CMA-ES actually results in a better CDRs. The nature of CMA-ES is 
-%to explore suboptimal routes until it converges to an optimal one. Implying 
-%that the previous approach of only looking into one optimal route may not 
-%produce a sufficiently rich training set. That is, the training set should 
-%incorporate a more complete knowledge on \emph{all} possible preferences, 
-%i.e., make also the distinction between suboptimal and sub-suboptimal 
-%features, etc.  
-%This would require a Pareto ranking of preferences which can be used to make 
-%the distinction to which feature sets are equivalent, better or worse -- and 
-%to what degree, i.e., by giving a weight to the preference. This would result 
-%in a very large training set, which of course could be re-sampled in order to 
-%make it computationally feasible to learn.
+the evolutionary search to deviate from giving too much weight for 
+problematic problem instances.
 
 The main drawback of using evolutionary search for learning optimal weights for 
 \cref{eq:jssp:linweights} is how computationally expensive it is to evaluate 
