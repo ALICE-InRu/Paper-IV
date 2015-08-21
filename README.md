@@ -6,7 +6,7 @@ Moreover, the study shows that the choice of objective function  for evolutionar
 
 ## Citation
 ```
-@inproceedings{DBLP:conf/ijcci/Ingimundardottir14,
+@inproceedings{InRu14,
   author    = {Helga Ingimundardottir and
                Thomas Philip Runarsson},
   title     = {Evolutionary Learning of Weighted Linear Composite Dispatching Rules
